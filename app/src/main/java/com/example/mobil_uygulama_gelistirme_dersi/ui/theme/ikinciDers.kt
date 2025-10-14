@@ -1,35 +1,36 @@
 package com.example.mobil_uygulama_gelistirme_dersi.ui.theme
 
+
 fun main() {
 
     // null safety:
-// detaylý bilgi: https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-nullable-types
-// bazý yapýlarýn null olma ihtimalý vardýr, ya da o deðer þu an için null deðerindedir.
-// bu nedenle o yapýnýn null deðer alabileceðini belirtmemiz gerekir bunu da ? ile yaparýz
-    // ör:
-    var sayi1: Int? = null // doðru kullaným  - null ve integer deðer alabilir
-    //var sati2: Int = null // yanlýþ kullaným hata alýrýz
+// detaylï¿½ bilgi: https://kotlinlang.org/docs/null-safety.html#nullable-types-and-non-nullable-types
+// bazï¿½ yapï¿½larï¿½n null olma ihtimalï¿½ vardï¿½r, ya da o deï¿½er ï¿½u an iï¿½in null deï¿½erindedir.
+// bu nedenle o yapï¿½nï¿½n null deï¿½er alabileceï¿½ini belirtmemiz gerekir bunu da ? ile yaparï¿½z
+    // ï¿½r:
+    var sayi1: Int? = null // doï¿½ru kullanï¿½m  - null ve integer deï¿½er alabilir
+    //var sati2: Int = null // yanlï¿½ï¿½ kullanï¿½m hata alï¿½rï¿½z
     println("deger atama yapmadan: $sayi1")
     sayi1 = 3
     println("deger atama yapdiktan sonra: $sayi1")
 
-    // !! verinin null olmayacaðýný tahattut
-    // var giris2 = readLine()!!  // bu iþaret !! verinin null olmayacaðýný tahattut eder
+    // !! verinin null olmayacaï¿½ï¿½nï¿½ tahattut
+    // var giris2 = readLine()!!  // bu iï¿½aret !! verinin null olmayacaï¿½ï¿½nï¿½ tahattut eder
 
 
-// diziler(array):  detaylý döküman https://kotlinlang.org/docs/strings.html#create-arrays
-// veri tutmak için kullandýðýmýz yapýlardýr
+// diziler(array):  detaylï¿½ dï¿½kï¿½man https://kotlinlang.org/docs/strings.html#create-arrays
+// veri tutmak iï¿½in kullandï¿½ï¿½ï¿½mï¿½z yapï¿½lardï¿½r
     var dizi1 = arrayOf(2,3,4,5,"Sudenaz",5)
     print(dizi1)
-    // hafýzadaki referansýný verir:
+    // hafï¿½zadaki referansï¿½nï¿½ verir:
     // [Ljava.lang.Object;@66a298842, 3, 4, 5, Sudenaz, 5
-    //[ ? Bu bir dizi (array) olduðunu gösterir.
-    // L ? Bu, dizinin referans türü (Object, String, vb.) içerdiðini belirtir.
-    //java.lang.Object; ? Dizinin eleman türü Object.
-    //@66a298842 ? Bu, dizinin hash kodudur (rastgele bir sayý, bellekteki adresine karþýlýk gelir).
+    //[ ? Bu bir dizi (array) olduï¿½unu gï¿½sterir.
+    // L ? Bu, dizinin referans tï¿½rï¿½ (Object, String, vb.) iï¿½erdiï¿½ini belirtir.
+    //java.lang.Object; ? Dizinin eleman tï¿½rï¿½ Object.
+    //@66a298842 ? Bu, dizinin hash kodudur (rastgele bir sayï¿½, bellekteki adresine karï¿½ï¿½lï¿½k gelir).
 
-    // dizi elemanlarýný yazdýrma
-    println(dizi1.joinToString()) // dizinin içini yazdýrýrýz
+    // dizi elemanlarï¿½nï¿½ yazdï¿½rma
+    println(dizi1.joinToString()) // dizinin iï¿½ini yazdï¿½rï¿½rï¿½z
     println("Sifirinci index:" + dizi1[0])
 
     // listeye eleman ekleme
@@ -37,32 +38,32 @@ fun main() {
     println(dizi1.joinToString())
 
     // set komutu
-    var yeni1 = dizi1.set(1,5) // 1. indexteki deðerin yerine 5 yaz  komutunu verdik
+    var yeni1 = dizi1.set(1,5) // 1. indexteki deï¿½erin yerine 5 yaz  komutunu verdik
     println(yeni1)
 
-    print("Lütfen bir sayi giriniz: ")
+    print("Lï¿½tfen bir sayi giriniz: ")
     var giris = readLine()
-    println("Yazdýðýmýz deger: $giris")
+    println("Yazdï¿½ï¿½ï¿½mï¿½z deger: $giris")
 
-    // kullanýcýdan bir sayý alýp 5 ile çarpýp ekrana yazdýracaðýz
+    // kullanï¿½cï¿½dan bir sayï¿½ alï¿½p 5 ile ï¿½arpï¿½p ekrana yazdï¿½racaï¿½ï¿½z
 
-    println("5 ile çarpýlmasýný istediðiniz sayýyý giriniz: ")
-    var giris2 = readLine()!!  // bu iþaret !! verinin null olmayacaðýný tahattut eder
+    println("5 ile ï¿½arpï¿½lmasï¿½nï¿½ istediï¿½iniz sayï¿½yï¿½ giriniz: ")
+    var giris2 = readLine()!!  // bu iï¿½aret !! verinin null olmayacaï¿½ï¿½nï¿½ tahattut eder
 
     println("Sonucunuz: ${giris2.toInt() * 5}")
 
 
-    // kullanýcýdan iki sayý alýp ortalamasýný döndürelim
-    println("Lütfen ortalamasý alýnacak ilk sayýsý giriniz: ")
+    // kullanï¿½cï¿½dan iki sayï¿½ alï¿½p ortalamasï¿½nï¿½ dï¿½ndï¿½relim
+    println("Lï¿½tfen ortalamasï¿½ alï¿½nacak ilk sayï¿½sï¿½ giriniz: ")
     var giris3 = readLine()!!.toInt()
-    println("Lütfen ortalamasý alýnacak ikinci sayýsý giriniz: ")
+    println("Lï¿½tfen ortalamasï¿½ alï¿½nacak ikinci sayï¿½sï¿½ giriniz: ")
     var giris4 = readLine()!!.toInt()
 
     println("Sonucunuz: ${(giris3 + giris4)/2}")
 
 
     // dizi listeler
-    var liste1 = ArrayList<Any>() // buradaki Any = Anything -> Herhangibir deðer alabilir
+    var liste1 = ArrayList<Any>() // buradaki Any = Anything -> Herhangibir deï¿½er alabilir
     liste1.add(10) // ekleme fonksiyonu
     liste1.add(20)
     liste1.add(30)
@@ -71,21 +72,21 @@ fun main() {
     liste1.add(60)
     println(liste1)
 
-    println(liste1[2]) // 3. sýradaki elemaný yazdýr
-    liste1.set(1,6) // 2. elemaný 6 olarak deðiþtir.
+    println(liste1[2]) // 3. sï¿½radaki elemanï¿½ yazdï¿½r
+    liste1.set(1,6) // 2. elemanï¿½ 6 olarak deï¿½iï¿½tir.
     println(liste1)
-    liste1[3] = 7 // 2. elemaný 7 olarak deðiþtirmenin baþka bir yolu
+    liste1[3] = 7 // 2. elemanï¿½ 7 olarak deï¿½iï¿½tirmenin baï¿½ka bir yolu
     println(liste1)
 
     println(liste1)
     liste1.add("kelime")
     println(liste1)
 
-    // liste boyutu gösterme
+    // liste boyutu gï¿½sterme
     val listeBoyutu = liste1.size
-    println("Liste1 listesinin eleman sayýsý: $listeBoyutu")
+    println("Liste1 listesinin eleman sayï¿½sï¿½: $listeBoyutu")
 
-    // liste boyutunu 2 ile çarpalým
-    println("Liste boyunun 2 katý: ${listeBoyutu * 2} ")
+    // liste boyutunu 2 ile ï¿½arpalï¿½m
+    println("Liste boyunun 2 katï¿½: ${listeBoyutu * 2} ")
 
 }
