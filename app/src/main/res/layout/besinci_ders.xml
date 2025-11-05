@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/vizeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vize Notu"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/finalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Final Notu"
+        android:inputType="number"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/hesaplaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HESAPLA"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"
+        android:text="Sonuç burada gösterilecek" />
+
+</LinearLayout>
